@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+
+<style>
+#wrapper{
+width:500px;
+height:500px;
+background:yellow;
+border:2px solid;
+
+margin:auto;
+
+}
+/*wrapper 안에 가두어져 있기 때문에 픽셀로 명시할 필요 없다..*/
+#content1 {
+	width:50%;
+	height:400px;
+	float:left;
+	
+	background:green;
+}
+/*clear:left -> float으로 생긴 빈틈으로 들어가지 않게함*/
+#content2{
+	width:50%;
+	height:400px;
+	float:left;
+	background:red;
+}
+
+#footer{
+	background:blue;
+	height:100px;
+	clear:left;
+	
+}
+
+</style>
+</head>
+<body>
+  <pre> 
+	<h3>float 과 clear 에 대해 학습한다 </h3>
+  </pre>
+
+	<div id= "wrapper">
+
+	<div id = "content1"> 좌측</div>
+	
+	<div id = "content2">우측</div>
+
+	<div id = "footer">아래</div>
+
+</body>
+</html>

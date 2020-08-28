@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+#box{
+	width:100px;
+	height:100px;
+ 
+	position:absolute;
+	display:inline-block;
+	left:0px;
+	top:100px;
+	/*이 css 가 사용하게될 애니메이션 프레임 이름*/
+	animation-name:aniBg;
+	
+	animation-duration:2.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate; /*반복방식을 번갈아가면서 하도록*/
+}
+#box2{
+	border:2px solid;
+	position:absolute;
+	width:100px;
+	height:20px;
+	display:inline;
+	background-color:black;
+	left:0px;
+	top:400px;
+
+	animation-name:aniBg2;
+	
+	animation-duration:2.5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate; /*반복방식을 번갈아가면서 하도록*/
+}
+
+@keyframes aniBg2{
+	0% {
+ 
+	left:100px;
+	top:400px;
+	width:50px;
+	height:10px;
+	}
+	20%{
+	 left:200px;
+	 top:400px;
+	 width:100px;
+	height:20px;
+	 }
+	  
+	 40%{
+	 left:300px;
+	 top:400px;
+	 width:50px;
+	height:10px;
+	 }
+	 60%{
+	left:300px;
+	top:400px;
+	 width:100px;
+	height:20px;
+	 }
+
+	 80%{
+	left:300px;
+	top:400px;
+	 width:50px;
+	height:10px;
+
+	 }
+	100%{
+	left:300px;
+	top:400px;
+	width:100px;
+	height:20px;
+	}
+	  
+
+}
+/*애니메이션 프레임 정의*/
+@keyframes aniBg{
+	0% {
+ 
+	left:100px;
+	top:100px;
+	}
+	20%{
+	 left:200px;
+	 top:300px;
+	 }
+	  
+	 40%{
+	 left:300px;
+	 top:100px;
+	 }
+	 60%{
+	left:300px;
+	top:300px;
+	 }
+
+	 80%{
+	left:300px;
+	top:100px;
+
+	 }
+	100%{
+	left:300px;
+	top:300px;
+	}
+	  
+
+}
+
+
+ 
+ 
+	
+</style>
+
+</head>
+<body>
+	<div id="box"><img src="../image/football.png" width="100px" height ="100px" > </div>  
+	<div id="box2"></div>
+</body>
+</html>
